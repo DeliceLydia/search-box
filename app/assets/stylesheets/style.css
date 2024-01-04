@@ -1,0 +1,22 @@
+body {
+  background-color: #00838F;
+}
+
+.color {
+  background-color: #fff;
+  max-width: 800px;
+  margin:  15% auto;
+  padding: 80px;
+}
+
+.green {
+  color: #fff;
+  background-color: #00838f !important;
+  border-color: #00838f !important;
+  box-shadow: none;
+}
+
+.label {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
