@@ -1,3 +1,5 @@
-<%= article_tag "articles" do %>
-  <%= render articles %>
-<% end >
+<div id="<%= dom_id article %>">
+  <p class="">
+    <%= link_to article.text, article_path(article), class: "" %>
+  </p>
+</div>
