@@ -1,23 +1,24 @@
-## About Project
+## Description
 
-These projects was about creating a realtime search box, where users search articles, and then to have analytics that display what users were searching for
+This project is about creating a realtime search box, where users search articles, and then to have analytics that display what users were searching for
 
 ## Built With
 
 - Ruby v3.2.2
 - Rails 7.1.2
+- Javascript
 
 ## Getting Started
 
-* Clone this repo https://github.com/DeliceLydia/search-box
+* Clone this repo
     ```
     git clone https://github.com/DeliceLydia/search-box
     ```
-* Navigate to re-former folder
+* Navigate to the search-box folder
     ```
     cd search-box
     ```
-* On the terminal, while in the 're-former' directory, run the following to install dependency:
+* On the terminal, while in the 'search-box' directory, run the following to install dependency:
     ```
     bundle install
     ```
@@ -30,17 +31,6 @@ These projects was about creating a realtime search box, where users search arti
     rails server
     ```
 
-    OR
-
-    ```
-    rails s
-    ```
-* Go to the browser and enter 
-    ```http://localhost:3000``` to go to the homepage which display links to all users and for creating a new user
-
-
 👤 **Delice Lydia**
   - GitHub: [@githubhandle](https://github.com/DeliceLydia)
   - LinkedIn: [LinkedIn](https://twitter.com/IngabireLydia3)
-
-
