@@ -1,14 +1,18 @@
 <p style="color: green"><%= notice %></p>
+<h1 class="font-bold text-3xl mb-3">Articles</h1>
 
-<h1>Articles</h1>
+<%= form_with(url: articles_path, method: :get, data: {turbo_frame: "articles"}) do |form| %>
 
-<div id="articles">
-  <% @articles.each do |article| %>
-    <%= render article %>
-    <p>
-      <%= link_to "Show this article", article %>
-    </p>
-  <% end %>
+  <%= form.label :query, "Search by article text:" %>
+  <div class="">
+    <%= form.text_field :query, class: "" %>
+
+    <%= form.submit 'Search', class: "" %>
+  </div>
+<% end %>
+
+<div class="my-6">
+  <%= render partial: '/articles/article' %>
 </div>
 
-<%= link_to "New article", new_article_path %>
+<%= link_to "New Article", new_article_path, class: ""%>

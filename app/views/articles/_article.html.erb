@@ -1,7 +1,3 @@
-<div id="<%= dom_id article %>">
-  <p>
-    <strong>Text:</strong>
-    <%= article.text %>
-  </p>
-
-</div>
+<%= article_tag "articles" do %>
+  <%= render articles %>
+<% end >
