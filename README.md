@@ -22,9 +22,9 @@ This project is about creating a realtime search box, where users search article
     ```
     bundle install
     ```
-* At this point, you still don't have the SQLite database. Run the following to get setup:
+* Run the following command to setup database:
     ```
-    rails db:migrate
+    rails db:reset
     ```
 * To interact with the project, run:
     ```
