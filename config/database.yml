@@ -9,13 +9,17 @@ default: &default
 development:
   <<: *default
   database: search_app_development
+  username: postgres
+  password: ingabire
 
 test:
   <<: *default
   database: search_app_test
+  username: postgres
+  password: ingabire
 
 production:
   <<: *default
   database: search_app_production
   username: postgres
-  password: <%= ENV["DB_PASSWORD"] %> 
+  password: ingabire

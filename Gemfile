@@ -7,6 +7,7 @@ gem "puma", ">= 5.0"
 gem 'bootstrap', '~> 5.3.2'
 gem 'jquery-rails'
 gem 'pg', '~> 1.1'
+gem "figaro"
 
 gem "sassc-rails"
 

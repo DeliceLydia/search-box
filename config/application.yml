@@ -1,0 +1,4 @@
+db_password: ingabire
+
+production:
+  db_password: ingabire
