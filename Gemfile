@@ -13,6 +13,7 @@ gem "cssbundling-rails"
 gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
+gem "rspec"
 
 gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
@@ -20,6 +21,7 @@ gem "bootsnap", require: false
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
+  gem 'rspec-rails'
 end
 
 group :development do

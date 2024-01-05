@@ -30,7 +30,9 @@ This project is about creating a realtime search box, where users search article
     ```
     rails server
     ```
+## Tested With
+- Rspec
 
 👤 **Delice Lydia**
-  - GitHub: [@githubhandle](https://github.com/DeliceLydia)
-  - LinkedIn: [LinkedIn](https://twitter.com/IngabireLydia3)
+  - [Github](https://github.com/DeliceLydia)
+  - [Linkedin](https://twitter.com/IngabireLydia3)
