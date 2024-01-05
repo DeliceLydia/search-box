@@ -23,7 +23,7 @@ gem "bootsnap", require: false
 gem 'rails_12factor', group: :production
 
 group :development, :test do
-  gem "debug", platforms: %i[ mri windows ]
+  gem 'factory_bot_rails'
   gem 'rspec-rails'
 end
 
