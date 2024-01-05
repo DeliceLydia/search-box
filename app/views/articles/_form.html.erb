@@ -1,11 +1,11 @@
-<div class="container color">
+<div class="color">
   <%= form_with(url: articles_path, method: :get, data: {controller: "search-form", turbo_frame: "articles", turbo_action: "advance"}) do |form| %>
 
     <%= form.label :query, "Easier way to search an article", :class => "label"  %>
     <div class="col-md-8 mt-2">
-      <%= form.text_field :query, class: "form-control" %>
+      <%= form.text_field :query, class: "form-control", data: {action: "input->search-form#search"} %>
 
-      <%= form.submit 'Search', class: "btn btn-block green mt-3 w-50" %>
+      <%= form.submit 'Search', class: "button green" %>
     </div>
     <% end %>
   <%= render "articles", articles: @articles %>

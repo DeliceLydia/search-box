@@ -1,15 +1,20 @@
 class ArticlesController < ApplicationController
   def index
-    if params[:query].present?
-      @articles = Article.where("name LIKE ?", "%#{params[:query]}%")
-    else
-      @articles = Article.all
+    @articles = search_articles
+    if turbo_frame_request? 
+      render partial: "articles", locals: { articles: @articles } 
+    else 
+      render :index 
     end
+  end
 
-    if turbo_frame_request?
-      render partial: "articles", locals: { articles: @articles }
-    else
-      render :index
+  private 
+  
+  def search_articles 
+    if params[:query].present? 
+      Article.where("text LIKE ?", "%#{params[:query]}%") 
+    else 
+      Article.all 
     end
   end
 end

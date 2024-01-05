@@ -4,19 +4,42 @@ body {
 
 .color {
   background-color: #fff;
-  max-width: 800px;
+  max-width: 600px;
   margin:  15% auto;
   padding: 80px;
 }
 
 .green {
   color: #fff;
-  background-color: #00838f !important;
+  background-color: #8f003c !important;
   border-color: #00838f !important;
   box-shadow: none;
 }
 
 .label {
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 600;
+
+}
+
+.form-control {
+  padding: 16px 80px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid;
+}
+
+.button {
+  background-color: #de5233;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 18px 70px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
 }
