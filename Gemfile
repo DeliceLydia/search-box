@@ -20,6 +20,8 @@ gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 
+gem 'rails_12factor', group: :production
+
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   gem 'rspec-rails'
