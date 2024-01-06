@@ -10,7 +10,6 @@ gem 'pg', '~> 1.1'
 gem "figaro"
 
 gem "sassc-rails"
-
 gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
