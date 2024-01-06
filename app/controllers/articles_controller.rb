@@ -11,11 +11,10 @@ class ArticlesController < ApplicationController
   private 
   
   def search_articles
-    query = params[:query].to_s.strip
-    if query.length >= 18
-      Article.where("text LIKE ?", "%#{params[:query]}%") 
-    else 
-      Article.none
+    if params[:query].present?
+      Article.where("text LIKE ?", "%#{params[:query]}%")
+    else
+      Article.all
     end
   end
 end
