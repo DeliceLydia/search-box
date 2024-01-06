@@ -23,11 +23,11 @@ body {
 }
 
 .form-control {
-  padding: 16px 0px;
+  padding: 16px 10px;
   width: 100%;
   margin: 10px 0;
   box-sizing: border-box;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 .button {
